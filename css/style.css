@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+body{
+font-family: 'PTSans',sans-serif;
+
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.ba-container{
+	max-width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.ba-intro {
+	position: relative;
+	background: url(../img/intro-bg.jpg) 50% no-repeat;
+	background-size: cover;
+	color:  #545454;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	padding-bottom: 105px;
+
+
+}
+.ba-intro:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	background: rgba(252,219,0,0.8);
+}
+.ba-header {
+	position: relative;
+	z-index: 1;
+	padding-top: 52px;
+	padding-bottom: 60px;
+}
+.ba-menu {
+	list-style: none;
+	margin: 0;
+}
+.ba-menu__item {
+	display: inline-block;
+	padding-top: 13px;
+}
+.ba-menu__link {
+	text-decoration: none;
+
+	color:  #010101;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1;
+	padding-left: 60px;
+}
+.ba-menu__link:hover {
+text-decoration: underline;
+color: #fff;
+}
+.ba-intro-text {
+	position: relative;
+	z-index: 1;
+	padding-right: 55px;
+	padding-top: 66px;
+}
+.ba-intro__title {
+	color:  #010101;
+font-size: 32px;
+font-weight: 700;
+line-height: 1;
+margin: 0;
+margin-bottom: 20px;
+
+}
+.ba-intro__subtitle {
+	color:  #313841;
+font-size: 20px;
+font-weight: 400;
+margin: 0;
+line-height: 24px;
+margin-bottom: 19px;
+}
+.ba-intro-img {
+	position: relative;
+	z-index: 1;
+	padding-left: 90px;
+}
+.ba-intro__img {
+	display: block;
+
+}
+.ba-intro-text-icons {
+	margin-top: 35px;
+	font-family: 'FontAwesome';
+color:  #010101;
+font-size: 42px;/* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+line-height: 20px;
+}
+.ba-intro-text__link {
+color:  #010101;
+margin-right: 28px;
+}
+.ba-intro-text__link:hover {
+color: #FFF;
+}
+.ba-features {
+	padding-top: 87px;
+	padding-bottom: 155px;
+	color:  #313841;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+}
+.ba-features-text {
+	max-width: 780px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom:65px;
+}
+.ba-features-text p {
+	margin: 0;
+	margin-top: 15px;
+}
+.ba-features__title {
+	color:  #010101;
+font-size: 32px;
+font-weight: 700;
+line-height: 1;
+margin-bottom: 0;
+}
+.ba-feature {
+	padding-left: 80px;
+	margin-top: 20px;
+}
+.ba-feature__title {
+	color:  #010101;
+font-size: 22px;
+font-weight: 400;
+line-height: 24px;
+margin-top: 0;
+}
+.ba-feature__description {
+	color:  #898989;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+margin-top: 20px;
+}
+.ba-feature {
+	position: relative;
+
+}
+.ba-feature:before {
+	font-family: "FontAwesome";
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color:  #010101;
+font-size: 50px;
+font-weight: 400;
+line-height: 32px;
+}
+.ba-feature--responsive:before {
+	font-family: "FontAwesome";
+		content: "\f10a";
+}
+.ba-feature--psd:before {
+	content: "\f094";
+}
+.ba-feature--font:before {
+	content: "\f114";
+
+}
+.ba-feature--html:before {
+	content: "\f121";
+}
+.ba-feature--email:before {
+	content: "\f003";
+}
+.ba-feature--download:before {
+	content: "\f097";
+}
+.ba-contacts {
+	position: relative;
+	background: url(../img/contacts-bg.jpg) 50% no-repeat;
+	background-size: cover;
+	padding-top: 90px;
+	padding-bottom: 140px;
+
+}
+.ba-contacts:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	background: rgba(35,37,39,0.88);
+}
+.ba-contacts-text {
+	position: relative;
+	z-index: 1;
+	max-width: 750px;
+	margin: 0 auto;
+	text-align: center;
+	color:  #898989;
+	font-size: 20px;
+	font-weight: 400;
+}
+.ba-contacts__title {
+		color:  #fcdb00;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1;
+	margin-top: 0;
+}
+.ba-contacts__form {
+	position: relative;
+	z-index: 1;
+}
+.ba-contacts__form {
+	max-width: 750px;
+	margin: 0 auto;
+}
+.ba-button__submit {
+border-style: solid;
+border-width: 2px;
+border-color:  #010101;
+border-radius: 4px;
+outline-style: none;
+border: none;
+background-color:  #fcdb00;
+/* width: 126px; */
+padding-left: 34px;
+padding-right: 34px;
+height: 50px;
+line-height: 50px;
+color:  #010101;
+font-size: 16px;
+font-weight: 700;
+}
+.ba-button__submit:hover {
+	background-color:  #5DFC00;
+}
+.ba-field {
+	width: 75%;
+	line-height: 1;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 400;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 25px;
+	outline-style: none;
+
+}
+.ba-field {
+	margin-right: 20px;
+}
+.ba-contacts-socials {
+	position: relative;
+	z-index: 1;
+	padding-top: 70px;
+	padding-bottom: 65px;
+	border-bottom: 1px solid #ccc;
+}
+.ba-contacts-socials {
+	font-family: 'FontAwesome',sans-serif;
+color:  #fcdb00;
+font-size: 42px;
+font-weight: 400;
+line-height: 32px;
+}
+.ba-social__link {
+	color:  #fcdb00;
+	margin-right: 25px;
+}
+.ba-social__link:hover {
+	color: #FFF;
+}
+.ba-footer {
+	position: relative;
+	z-index: 1;
+	padding-top: 65px;
+}
+.ba-footer__adress {
+color:  #ffffff;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+padding-bottom: 5px;
+font-style: normal;
+}
+.ba-footer a{
+	display: block;
+	text-decoration: none;
+	color:  #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.ba-footer a:hover {
+	color: #fcdb00;
+}
